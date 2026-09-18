@@ -1,0 +1,53 @@
+{
+  "name": "@brivvvy/guardrail",
+  "version": "0.1.0",
+  "description": "A deterministic policy engine for guarded agent autonomy.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .test-build .coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:coverage": "npm run build && node --test --experimental-test-coverage tests/*.test.mjs",
+    "secrets:check": "node scripts/check-secrets.mjs",
+    "check": "npm run typecheck && npm run test && npm run build && npm run secrets:check"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "guardrails",
+    "policy",
+    "autonomy",
+    "typescript",
+    "safety"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brivvvy/guardrail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brivvvy/guardrail/issues"
+  },
+  "homepage": "https://github.com/brivvvy/guardrail#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
