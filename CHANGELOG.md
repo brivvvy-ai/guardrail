@@ -5,6 +5,18 @@ All notable changes to this project are documented in this file.
 The format is based on Keep a Changelog principles and the project follows
 semantic versioning for public releases.
 
+## [0.1.2] - 2026-09-30
+
+### Added
+
+- README.md logo/image poster addition
+
+## [0.1.1] - 2026-09-30
+
+### Added
+
+- Initial dump into the Brivvvy GitHub organization
+
 ## [0.1.0] - 2026-09-17
 
 ### Added
