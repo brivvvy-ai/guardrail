@@ -6,8 +6,52 @@
 [![Node](https://img.shields.io/node/v/@brivvvy/guardrail)](package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Yes-green)](https://www.typescriptlang.org/)
 
-![Policy Engine](https://img.shields.io/badge/Policy_Engine-Enabled-success)
-![Human Control](https://img.shields.io/badge/Human_Control-First-green)
+```ts
+import { guardrail, definePolicy } from "@brivvvy/guardrail";
+
+const notifyCustomerPolicy = definePolicy({
+  id: "notify-customer-policy",
+  action: "notify_customer_policy",
+  description: "Gate execution of an external message to a customer.",
+  onPass: "execute",
+  controls: [
+    {
+      kind: "permissions",
+      allOf: ["message:send"],
+      onFailure: "escalate",
+    },
+    {
+      kind: "confidence",
+      atLeast: 0.95,
+      onFailure: "request_approval",
+    },
+    {
+      kind: "risk",
+      atMost: "medium",
+      onFailure: "request_approval",
+    },
+    {
+      kind: "reversibility",
+      mustBe: true,
+      onFailure: "request_approval",
+    },
+  ],
+});
+
+const result = await guardrail.evaluate({
+  action: "notify_customer_policy",
+  policies: [notifyCustomerPolicy]
+  context: {
+    recipient: "customer@example.com",
+    autonomous: true,
+  },
+});
+
+if (!result.allowed) {
+  console.log(result.reason);
+}
+
+```
 
 # Brivvvy Guardrail
 
