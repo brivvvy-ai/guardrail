@@ -1,6 +1,6 @@
 ![Brivvvy Guardrail logo](./docs/images/guardrail-readme-poster.jpg)
 
-[![CI](https://github.com//brivvvy-ai/guardrail/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/guardrail/actions/workflows/ci.yml)
+[![CI](https://github.com//brivvvy-ai/guardrail/actions/workflows/ci.yml/badge.svg)](https://github.com/brivvvy-ai/guardrail/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/PACKAGE-NAME.svg)](https://www.npmjs.com/package/PACKAGE-NAME)
 [![License](https://img.shields.io/github/license/OWNER/guardrail)](LICENSE)
 [![Node](https://img.shields.io/node/v/PACKAGE-NAME.svg)](package.json)
