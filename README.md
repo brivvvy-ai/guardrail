@@ -3,12 +3,11 @@
 [![CI](https://github.com//brivvvy-ai/guardrail/actions/workflows/ci.yml/badge.svg)](https://github.com/brivvvy-ai/guardrail/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/PACKAGE-NAME.svg)](https://www.npmjs.com/package/PACKAGE-NAME)
 [![License](https://img.shields.io/github/license/brivvvy-ai/guardrail)](LICENSE)
-[![Node](https://img.shields.io/node/v/PACKAGE-NAME.svg)](package.json)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org/)
+[![Node](https://img.shields.io/node/v/@brivvvy/guardrail)](package.json)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Yes-green)](https://www.typescriptlang.org/)
 
-![Agentic AI](https://img.shields.io/badge/Agentic_AI-Guardrails-blue)
 ![Policy Engine](https://img.shields.io/badge/Policy_Engine-Enabled-success)
-![Human Control](https://img.shields.io/badge/Human_Control-First-purple)
+![Human Control](https://img.shields.io/badge/Human_Control-First-green)
 
 # Brivvvy Guardrail
 
