@@ -1,0 +1,9 @@
+src/
+tests/
+examples/
+docs/
+scripts/
+.test-build/
+.coverage/
+tsconfig*.json
+.github/
