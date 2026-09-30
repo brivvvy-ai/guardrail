@@ -1,5 +1,15 @@
 ![Brivvvy Guardrail logo](./docs/images/guardrail-readme-poster.jpg)
 
+[![CI](https://github.com/OWNER/guardrail/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/guardrail/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/PACKAGE-NAME.svg)](https://www.npmjs.com/package/PACKAGE-NAME)
+[![License](https://img.shields.io/github/license/OWNER/guardrail)](LICENSE)
+[![Node](https://img.shields.io/node/v/PACKAGE-NAME.svg)](package.json)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org/)
+
+![Agentic AI](https://img.shields.io/badge/Agentic_AI-Guardrails-blue)
+![Policy Engine](https://img.shields.io/badge/Policy_Engine-Enabled-success)
+![Human Control](https://img.shields.io/badge/Human_Control-First-purple)
+
 # Brivvvy Guardrail
 
 **A deterministic policy engine for guarded agent autonomy.**
