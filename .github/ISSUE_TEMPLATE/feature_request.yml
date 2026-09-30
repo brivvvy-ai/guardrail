@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a change to Guardrail's public policy model or developer experience.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete problem should Guardrail solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe observable behavior rather than an implementation preference when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and determinism considerations
+      description: Could this increase autonomy, create ambiguous policy precedence, or introduce nondeterminism?
+    validations:
+      required: true
