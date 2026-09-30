@@ -1,3 +1,5 @@
+![Brivvvy Guardrail logo](./docs/images/guardrail-readme-poster.jpg)
+
 # Brivvvy Guardrail
 
 **A deterministic policy engine for guarded agent autonomy.**
